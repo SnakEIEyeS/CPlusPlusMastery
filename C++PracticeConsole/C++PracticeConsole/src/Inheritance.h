@@ -18,4 +18,9 @@ public:
 
 	int* a = nullptr;
 	int y;
+
+	bool operator>(const Derived& i_rhs)
+	{
+		return true;
+	}
 };
