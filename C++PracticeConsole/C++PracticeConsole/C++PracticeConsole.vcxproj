@@ -22,32 +22,32 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{C07B3A66-C7FD-4DFE-B8A0-705E08F5140B}</ProjectGuid>
     <RootNamespace>CPracticeConsole</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -130,13 +130,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Algorithms\Algorithms_2021.cpp" />
+    <ClCompile Include="src\Algorithms\Algorithms_2022.cpp" />
+    <ClCompile Include="src\Algorithms\Algorithms_Oct2019.cpp" />
+    <ClCompile Include="src\BoundingVolumes\AABB.cpp" />
+    <ClCompile Include="src\DataStructures\BinaryTree.cpp" />
+    <ClCompile Include="src\DataStructures\HashTable.cpp" />
+    <ClCompile Include="src\DataStructures\Object.cpp" />
+    <ClCompile Include="src\DataStructures\OctreeNode.cpp" />
+    <ClCompile Include="src\DataStructures\RingBuffer.cpp" />
     <ClCompile Include="src\Entity.cpp" />
     <ClCompile Include="src\Inheritance.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Math\FwdDeclareTest.cpp" />
+    <ClCompile Include="src\Math\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Algorithms\Algorithms_CodingPractice.h" />
+    <ClInclude Include="src\Algorithms\Algorithms_CodingPractice_2021.h" />
+    <ClInclude Include="src\Algorithms\Algorithms_CodingPractice_2022.h" />
+    <ClInclude Include="src\Algorithms\Chess\ChessPieces.h" />
+    <ClInclude Include="src\BoundingVolumes\AABB.h" />
+    <ClInclude Include="src\DataStructures\BinaryTree.h" />
+    <ClInclude Include="src\DataStructures\HashTable.h" />
+    <ClInclude Include="src\DataStructures\Object.h" />
+    <ClInclude Include="src\DataStructures\Octree.h" />
+    <ClInclude Include="src\DataStructures\OctreeNode.h" />
+    <ClInclude Include="src\DataStructures\RingBuffer-inl.h" />
+    <ClInclude Include="src\DataStructures\RingBuffer.h" />
     <ClInclude Include="src\Inheritance.h" />
     <ClInclude Include="src\Entity.h" />
+    <ClInclude Include="src\Math\FwdDeclareTest-inl.h" />
+    <ClInclude Include="src\Math\FwdDeclareTest.h" />
+    <ClInclude Include="src\Math\Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

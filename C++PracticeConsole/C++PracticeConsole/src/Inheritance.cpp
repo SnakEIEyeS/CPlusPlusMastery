@@ -20,6 +20,11 @@ Base::~Base()
 	}
 }
 
+void Base::PrintClass()
+{
+	std::cout << "Printing Base \n";
+}
+
 Derived::Derived() : a(new int(8)), y(10)
 {
 	std::cout << "Creating Derived \n";
@@ -41,3 +46,23 @@ Derived::~Derived()
 		baseint = nullptr;
 	}
 }
+
+void Derived::PrintClass()
+{
+	std::cout << "Printing Derived \n";
+}
+
+Lvl2::Lvl2()
+{
+	std::cout << "Creating Lvl2\n";
+}
+
+Lvl2::~Lvl2()
+{
+	std::cout << "Destroying Lvl2\n";
+}
+
+/*void Lvl2::PrintClass()
+{
+	std::cout << "Printing Lvl2 \n";
+}*/

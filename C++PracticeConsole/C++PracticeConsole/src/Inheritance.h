@@ -4,7 +4,9 @@ class Base
 {
 public:
 	Base();
-	~Base();
+	virtual ~Base();
+
+	virtual void PrintClass();
 
 	int x;
 	int* baseint = nullptr;
@@ -16,6 +18,8 @@ public:
 	Derived();
 	~Derived();
 
+	void PrintClass() override;
+
 	int* a = nullptr;
 	int y;
 
@@ -23,4 +27,14 @@ public:
 	{
 		return true;
 	}
+};
+
+class Lvl2 : public Derived
+{
+public:
+	Lvl2();
+	~Lvl2();
+
+	//void PrintClass() override;
+
 };
